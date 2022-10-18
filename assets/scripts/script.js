@@ -51,6 +51,8 @@ const cardsArray = [
 
 let gameGrid = cardsArray.concat(cardsArray);
 
+gameGrid.sort(() => 0.5 - Math.random());
+
 //Grabing the div with an id of root
 const game=document.getElementById("game");
 
