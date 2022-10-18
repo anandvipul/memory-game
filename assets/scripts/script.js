@@ -49,6 +49,7 @@ const cardsArray = [
   },
 ];
 
+let gameGrid = cardsArray.concat(cardsArray);
 
 //Grabing the div with an id of root
 const game=document.getElementById("game");
@@ -64,7 +65,7 @@ game.appendChild(grid);
 
 
 // For Each Item in the cardsArray assets.
-cardsArray.forEach((item) => {
+gameGrid.forEach((item) => {
 
 // Create a div
     const card = document.createElement('div');
